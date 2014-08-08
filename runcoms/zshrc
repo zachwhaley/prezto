@@ -13,6 +13,7 @@ fi
 # Aliases
 alias yum='sudo yum'
 alias pip='sudo pip'
+alias vi='vim'
 
 # Cisco things
 if [ -f ~/.ciscorc ]; then
