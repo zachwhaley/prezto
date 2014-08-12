@@ -17,5 +17,5 @@ alias vi='vim'
 
 # Cisco things
 if [ -f ~/.ciscorc ]; then
-    . ~/.ciscorc
+    source ~/.ciscorc
 fi
