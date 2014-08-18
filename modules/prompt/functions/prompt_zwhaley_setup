@@ -14,16 +14,15 @@ function prompt_zwhaley_setup {
   add-zsh-hook precmd prompt_zwhaley_precmd
 
   # Set vcs_info parameters.
-  zstyle ':vcs_info:(git|hg)*' formats '%F{blue}%s%f:%F{green}%b'
+  zstyle ':vcs_info:*' enable git hg
+  zstyle ':vcs_info:(git|hg)*' formats '%F{blue}%s%f:%F{green}%b '
 
-  SUCCESS_PROMPT=%F{blue}❯%F{cyan}❯%F{green}❯%f
-  FAILURE_PROMPT=%F{blue}❯%F{magenta}❯%F{red}❯%f
+  SUCCESS_PROMPT=%F{blue}❱%F{cyan}❱%F{green}❱%f
+  FAILURE_PROMPT=%F{blue}❱%F{magenta}❱%F{red}❱%f
 
   # Define prompts.
-  PROMPT='%B%F{magenta}[%b%F{cyan}%~%B%F{magenta}]%b
+  PROMPT='%F{blue}❮ %F{cyan}%m %~%F{blue} ${vcs_info_msg_0_}%F{blue}❯
 %(?.${SUCCESS_PROMPT}.${FAILURE_PROMPT}) '
-  RPROMPT='${vcs_info_msg_0_}'
-
 }
 
 prompt_zwhaley_setup "$@"
