@@ -14,8 +14,6 @@ function prompt_zwhaley_setup {
   add-zsh-hook precmd prompt_zwhaley_precmd
 
   # Set vcs_info parameters.
-  zstyle ':vcs_info:*' enable git hg p4
-  zstyle ':vcs_info:p4*' formats '%F{blue}%s'
   zstyle ':vcs_info:(git|hg)*' formats '%F{blue}%s%f:%F{green}%b'
 
   SUCCESS_PROMPT=%F{blue}❯%F{cyan}❯%F{green}❯%f
