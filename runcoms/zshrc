@@ -15,7 +15,7 @@ alias yum='sudo yum'
 alias pip='sudo pip'
 alias vi='vim'
 
-# Cisco things
-if [ -f ~/.ciscorc ]; then
-    source ~/.ciscorc
+# Local things
+if [ -f ~/.localrc ]; then
+  source ~/.localrc
 fi
