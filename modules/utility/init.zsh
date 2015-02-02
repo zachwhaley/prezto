@@ -93,7 +93,7 @@ fi
 alias l='ls -F'
 alias la='l -A'          # Lists hidden files
 alias ll='l -lh'         # Lists human readable sizes.
-alias lll='ll -A'        # Lists human readable sizes, hidden files.
+alias lla='ll -A'        # Lists human readable sizes, hidden files.
 alias lr='ll -R'         # Lists human readable sizes, recursively.
 alias lm='la | "$PAGER"' # Lists human readable sizes, hidden files through pager.
 alias lx='ll -XB'        # Lists sorted by extension (GNU only).
