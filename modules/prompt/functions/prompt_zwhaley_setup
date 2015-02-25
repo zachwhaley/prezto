@@ -23,7 +23,6 @@ function prompt_zwhaley_setup {
   # Define prompts.
   PROMPT='%F{blue}❮ %F{cyan}%m %~%F{blue} ${vcs_info_msg_0_}%F{blue}❯
 %(?.${SUCCESS_PROMPT}.${FAILURE_PROMPT}) '
-  RPROMPT='%F{cyan}%@%f'
 }
 
 prompt_zwhaley_setup "$@"
