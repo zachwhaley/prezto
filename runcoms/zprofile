@@ -47,6 +47,7 @@ path=(
   $path
   $ANDROID_HOME/tools
   $ANDROID_HOME/platform-tools
+  /usr/local/heroku/bin
 )
 
 #
