@@ -5,15 +5,9 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-# Ensure that a non-login, non-interactive shell has a defined environment.
-if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprofile"
-fi
-
 # Android Studio
 export JAVA_HOME=/usr/java/latest
 export ANDROID_HOME=/opt/android-studio/sdk
-PATH=.:$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 # Perforce
 export P4USER=$USER
@@ -21,6 +15,11 @@ export P4CONFIG=.p4config
 export P4IGNORE=.p4ignore
 export P4EDITOR=vim
 export P4DIFF=colordiff
+
+# Ensure that a non-login, non-interactive shell has a defined environment.
+if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprofile"
+fi
 
 # Python
 function pyenv {
