@@ -56,7 +56,7 @@ alias mv="${aliases[mv]:-mv} -i"
 alias p='${(z)PAGER}'
 alias po='popd'
 alias pu='pushd'
-alias rm="${aliases[rm]:-rm} -i"
+alias rm="${aliases[rm]:-rm} -I"
 alias type='type -a'
 
 # ls
@@ -71,7 +71,7 @@ if is-callable 'dircolors'; then
       eval "$(dircolors --sh)"
     fi
 
-    alias ls="${aliases[ls]:-ls} -F --color=auto"
+    alias ls="${aliases[ls]:-ls} --color=auto"
   else
     alias ls="${aliases[ls]:-ls} -F"
   fi
@@ -84,17 +84,16 @@ else
     # Define colors for the completion system.
     export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
 
-    alias ls="${aliases[ls]:-ls} -FG"
+    alias ls="${aliases[ls]:-ls} -G"
   else
     alias ls="${aliases[ls]:-ls} -F"
   fi
 fi
 
-alias l='ls -F'
-alias la='l -A'          # Lists hidden files
-alias ll='l -lh'         # Lists human readable sizes.
-alias lla='ll -A'        # Lists human readable sizes, hidden files.
+alias l='ls -1A'         # Lists in one column, hidden files.
+alias ll='ls -lh'        # Lists human readable sizes.
 alias lr='ll -R'         # Lists human readable sizes, recursively.
+alias la='ll -A'         # Lists human readable sizes, hidden files.
 alias lm='la | "$PAGER"' # Lists human readable sizes, hidden files through pager.
 alias lx='ll -XB'        # Lists sorted by extension (GNU only).
 alias lk='ll -Sr'        # Lists sorted by size, largest last.
