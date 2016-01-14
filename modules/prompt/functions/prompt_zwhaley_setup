@@ -15,13 +15,13 @@ function prompt_zwhaley_setup {
 
   # Set vcs_info parameters.
   zstyle ':vcs_info:*' enable git hg
-  zstyle ':vcs_info:(git|hg)*' formats '%F{blue}%s%f:%F{green}%b '
+  zstyle ':vcs_info:(git|hg)*' formats '%F{cyan}%s%f %F{green}%b '
 
   SUCCESS_PROMPT=%F{blue}❱%F{cyan}❱%F{green}❱%f
   FAILURE_PROMPT=%F{blue}❱%F{magenta}❱%F{red}❱%f
 
   # Define prompts.
-  PROMPT='%F{blue}❮ %F{cyan}%m %~%F{blue} ${vcs_info_msg_0_}%F{blue}❯
+  PROMPT='%F{blue}❮ %F{cyan}%m %F{yellow}%~ ${vcs_info_msg_0_}%F{blue}❯
 %(?.${SUCCESS_PROMPT}.${FAILURE_PROMPT}) '
 }
 
