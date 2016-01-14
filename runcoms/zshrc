@@ -14,7 +14,7 @@ fi
 alias vi='vim'
 alias nv='nvim'
 
-alias fcp='cp -f'
+alias fcp='/bin/cp -f'
 alias ls="${aliases[ls]:-ls} -FG"
 alias l='ls'
 alias la='ls -A'
