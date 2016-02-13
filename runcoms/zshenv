@@ -5,10 +5,6 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-# Android Studio
-export JAVA_HOME=/usr/java/latest
-export ANDROID_HOME=/opt/android-studio/sdk
-
 # Perforce
 export P4USER=$USER
 export P4CONFIG=.p4config
@@ -20,8 +16,3 @@ export P4DIFF=colordiff
 if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
-
-# Python
-function pyenv {
-    source /usr/bin/virtualenvwrapper.sh
-}
