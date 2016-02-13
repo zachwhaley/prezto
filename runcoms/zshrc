@@ -11,7 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Aliases
-alias vi='vim'
+alias vi='nvim'
 alias nv='nvim'
 
 alias fcp='/bin/cp -f'
