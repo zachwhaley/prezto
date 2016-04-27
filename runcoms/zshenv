@@ -9,7 +9,7 @@
 export P4USER=$USER
 export P4CONFIG=.p4config
 export P4IGNORE=.p4ignore
-export P4EDITOR=vim
+export P4EDITOR=nvim
 export P4DIFF=colordiff
 
 # Ensure that a non-login, non-interactive shell has a defined environment.
