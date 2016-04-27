@@ -25,3 +25,6 @@ alias lla='ll -A'
 if [ -f ~/.localrc ]; then
   source ~/.localrc
 fi
+
+# BP4O
+[ -f ~/.local/share/bp4o/init.zsh ] && source ~/.local/share/bp4o/init.zsh
