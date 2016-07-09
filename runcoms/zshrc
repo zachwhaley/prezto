@@ -12,7 +12,9 @@ fi
 
 # Aliases
 alias vi='nvim'
+alias vim='nvim'
 alias nv='nvim'
+alias oldvim='vim'
 
 alias fcp='/bin/cp -f'
 alias ls="${aliases[ls]:-ls} -FG"
