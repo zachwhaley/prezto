@@ -72,3 +72,6 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+# Initialize BP4O
+[ -f /etc/profile.d/bp4o.zsh ] && source /etc/profile.d/bp4o.zsh
