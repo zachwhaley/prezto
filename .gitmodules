@@ -22,3 +22,7 @@
 	path = modules/prompt/external/pure
 	url = git@github.com:sindresorhus/pure.git
 	branch = master
+[submodule "modules/autosuggestions/external"]
+	path = modules/autosuggestions/external
+	url = git@github.com:tarruda/zsh-autosuggestions.git
+	branch = master
