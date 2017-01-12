@@ -23,7 +23,7 @@ function is-true {
 
 # Prints the first non-empty string in the arguments array.
 function coalesce {
-  print "${${(s:\u00A0:)@}[1]}"
+  print "${${(s: :)@}[1]}"
 }
 
 
