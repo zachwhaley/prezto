@@ -37,7 +37,7 @@ if [[ ! -S "$SSH_AUTH_SOCK" ]]; then
 
   # Do not start ssh-agent if the PID from the last start of ssh-agent exists and
   # corresponds to a running ssh-agent under the current user.
-  if ! ps -U "$LOGNAME" -o pid,ucomm | grep -q -- "${SSH_AGENT_PID:--1} ssh-agent"; then
+  if ! ps -U "$LOGNAME" -o pid,comm | grep -E -q -e "${SSH_AGENT_PID:--1}\ +.*ssh-agent$"; then
     eval "$(ssh-agent | sed '/^echo /d' | tee "$_ssh_agent_env")"
   fi
 fi
