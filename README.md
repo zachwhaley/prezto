@@ -23,8 +23,8 @@ To upgrade your Prezto installation to use the new fork, run these commands:
 This assumes a typical installation. If you have forked or modified the
 project your steps may vary.
 
-[original]: sorin-ionescu/prezto
-[fork]: sorin-ionescu/prezto#1239
+[original]: https://github.com/sorin-ionescu/prezto
+[fork]: https://github.com/sorin-ionescu/prezto#1239
 
 Installation
 ------------
