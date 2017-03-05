@@ -124,9 +124,8 @@ function zle-line-init {
     echoti smkx
   fi
 
-  # https://github.com/zsh-users/prezto/issues/4
-  # Don't update editor info as it causes %_ (the parser status) not to be
-  # correctly rendered in prompts.
+  # Update editor information.
+  zle editor-info
 }
 zle -N zle-line-init
 
