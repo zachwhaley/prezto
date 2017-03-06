@@ -111,6 +111,15 @@ Resources
 
 The [Zsh Reference Card][7] and the [zsh-lovers][8] man page are indispensable.
 
+Project leaders
+---------------
+
+These are the active contributors that donate time on a consistent basis to help guide the project:
+
+* [facastagnini](https://github.com/facastagnini)
+* [johnpneumann](https://github.com/johnpneumann)
+* [paulmelnikow](https://github.com/paulmelnikow)
+
 License
 -------
 
