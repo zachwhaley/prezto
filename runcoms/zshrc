@@ -19,6 +19,7 @@ alias vi='nvim'
 alias vim='nvim'
 alias nv='nvim'
 alias oldvim='vim'
+alias viconf='nvim ~/.config/nvim/init.vim'
 
 alias fcp='/bin/cp -f'
 alias ls="${aliases[ls]:-ls} -FG"
