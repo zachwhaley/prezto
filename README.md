@@ -1,48 +1,9 @@
-This fork has shut down
-=======================
-
-This fork is deprecated and is no longer reviewing or merging changes. Please
-rebase / re-clone [the original repo][original] and open new issues and PRs
-there.
-
-This repo serves as historical record of the fork.
-
-- https://github.com/zsh-users/prezto/issues/44
-- https://github.com/zsh-users/prezto/issues/26
-- https://github.com/sorin-ionescu/prezto/issues/1239
-- https://github.com/sorin-ionescu/prezto/issues/1269
-
-&mdash; @facastagnini, @johnpneumann, and @paulmelnikow
-
-* * *
-
-[![Gitter](https://badges.gitter.im/zsh-users/prezto.svg)](https://gitter.im/zsh-users/prezto?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
 Prezto — Instantly Awesome Zsh
 ==============================
 
 Prezto is the configuration framework for [Zsh][1]; it enriches the command line
 interface environment with sane defaults, aliases, functions, auto completion,
 and prompt themes.
-
-Upgrading from sorin-ionescu/prezto
------------------------------------
-
-Prezto's [original maintainer][original] abandoned the project. This is a
-young, community-maintained fork, which was created [in December 2016][fork].
-
-To upgrade your Prezto installation to use the new fork, run these commands:
-
-    cd "${ZDOTDIR:-$HOME}/.zprezto"
-    git remote set-url origin https://github.com/zsh-users/prezto.git
-    git pull
-    git submodule update --init --recursive
-
-This assumes a typical installation. If you have forked or modified the
-project your steps may vary.
-
-[original]: https://github.com/sorin-ionescu/prezto
-[fork]: https://github.com/sorin-ionescu/prezto#1239
 
 Installation
 ------------
@@ -89,17 +50,7 @@ window or tab.
 Updating
 --------
 
-Make sure you are tracking this fork:
-
-    $ git remote -v
-    origin  https://github.com/zsh-users/prezto.git (fetch)
-    origin  https://github.com/zsh-users/prezto.git (push)
-
-If you see `sorin-ionescu` instead of `zsh-users`, update your remote:
-
-    git remote set-url origin https://github.com/zsh-users/prezto.git
-
-Then pull the latest changes and update submodules.
+Pull the latest changes and update submodules.
 
     git pull && git submodule update --init --recursive
 
