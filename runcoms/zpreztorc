@@ -122,7 +122,7 @@ zstyle ':prezto:module:prompt' theme 'zwhaley'
 #
 
 # Auto switch the Python virtualenv on directory change.
-# zstyle ':prezto:module:python:virtualenv' auto-switch 'yes'
+zstyle ':prezto:module:python:virtualenv' auto-switch 'yes'
 
 #
 # Screen
