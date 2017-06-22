@@ -27,7 +27,6 @@ alias la='ls -A'
 alias ll='ls -lh'
 alias lla='ll -A'
 alias tm='tmux -2'
-alias grep="rg"
 
 unsetopt CORRECT
 
