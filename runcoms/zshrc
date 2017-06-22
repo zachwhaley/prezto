@@ -11,8 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Enable BP4O
-autoload -Uz bp4o
-bp4o
+autoload -Uz bp4o && bp4o
 
 # Aliases
 alias vi='nvim'
