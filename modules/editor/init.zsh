@@ -274,6 +274,14 @@ fi
 # Emacs and Vi Key Bindings
 #
 
+# Ctrl + Left and Ctrl + Right bindings to forward/backward word
+for keymap in viins vicmd; do
+  for key in "${(s: :)key_info[ControlLeft]}"
+    bindkey -M "$keymap" "$key" vi-backward-word
+  for key in "${(s: :)key_info[ControlRight]}"
+    bindkey -M "$keymap" "$key" vi-forward-word
+done
+
 for keymap in 'emacs' 'viins'; do
   bindkey -M "$keymap" "$key_info[Home]" beginning-of-line
   bindkey -M "$keymap" "$key_info[End]" end-of-line
@@ -321,6 +329,9 @@ for keymap in 'emacs' 'viins'; do
   # Insert 'sudo ' at the beginning of the line.
   bindkey -M "$keymap" "$key_info[Control]X$key_info[Control]S" prepend-sudo
 done
+
+# Delete key deletes character in vimcmd cmd mode instead of weird default functionality
+bindkey -M vicmd "$key_info[Delete]" delete-char
 
 # Do not expand .... to ../.. during incremental search.
 if zstyle -t ':prezto:module:editor' dot-expansion; then
