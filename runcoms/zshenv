@@ -11,6 +11,9 @@ export P4CONFIG=.p4config
 export P4IGNORE=.p4ignore
 export P4EDITOR=nvim
 
+# pyenv
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
 # Ensure that a non-login, non-interactive shell has a defined environment.
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
