@@ -93,7 +93,9 @@ if (( $+VIRTUALENVWRAPPER_VIRTUALENV || $+commands[virtualenv] )) && \
   VIRTUAL_ENV_DISABLE_PROMPT=1
 
   # Enable 'virtualenv' with 'pyenv'.
-  if (( $+commands[pyenv] && $+commands[pyenv-virtualenv-init] )); then
+  if (( $+commands[pyenv] )) && \
+     pyenv commands | command grep -q virtualenv-init
+  then
     eval "$(pyenv virtualenv-init -)"
     # Optionall activate 'virtualenvwrapper' with 'pyenv' is available.
     if (( $#commands[(i)pyenv-virtualenvwrapper(_lazy|)] )); then
@@ -106,7 +108,10 @@ if (( $+VIRTUALENVWRAPPER_VIRTUALENV || $+commands[virtualenv] )) && \
       ${(@Ov)commands[(I)virtualenvwrapper(_lazy|).sh]}
       /usr/share/virtualenvwrapper/virtualenvwrapper(_lazy|).sh(OnN)
     )
-    source "${virtenv_sources[1]}"
+    if (( $#virtenv_sources )); then
+      source "${virtenv_sources[1]}"
+    fi
+
     unset virtenv_sources
   fi
 fi
