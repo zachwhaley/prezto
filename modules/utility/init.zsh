@@ -59,7 +59,7 @@ alias sa='alias | grep -i'
 alias type='type -a'
 
 # Safe ops. Ask the user before doing anything destructive.
-alias rmi="${aliases[rm]:-rm} -i"
+alias rmi="${aliases[rm]:-rm} -I"
 alias mvi="${aliases[mv]:-mv} -i"
 alias cpi="${aliases[cp]:-cp} -i"
 alias lni="${aliases[ln]:-ln} -i"
