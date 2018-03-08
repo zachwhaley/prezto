@@ -27,7 +27,9 @@ alias l='ls'
 alias la='ls -A'
 alias ll='ls -lh'
 alias lla='ll -A'
-alias tm='tmux -2'
+
+alias tmux='tmux -2'
+alias tm='tmux'
 
 unsetopt CORRECT
 
