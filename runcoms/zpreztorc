@@ -146,6 +146,9 @@ zstyle ':prezto:module:python:virtualenv' auto-switch 'no'
 # Automatically initialize virtualenvwrapper if pre-requisites are met.
 zstyle ':prezto:module:python:virtualenv' initialize 'yes'
 
+# Automatically initialize conda environment
+zstyle ':prezto:module:python' conda-init 'on'
+
 #
 # Screen
 #
